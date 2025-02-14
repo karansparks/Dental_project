@@ -1,0 +1,11 @@
+<div class="row">
+    <h2>Our Services</h2>
+    <p>Turning your smile into an experience</p>
+    <p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="true" [responsiveOptions]="responsiveOptions" autoplayInterval="3000">
+        <ng-template let-product #item>
+            <div class="border border-surface-200 dark:border-surface-700 rounded m-2 p-4">
+             <h4>hello friends</h4>
+            </div>
+        </ng-template>
+    </p-carousel>
+</div>

@@ -1,0 +1,11 @@
+.log{
+    font-family: 'MyFont';
+    font-size: 5.5rem;
+}
+
+$imgWidht: 100px;
+
+.logo{
+    width: $imgWidht !important;
+    height: auto;
+}
