@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
+import { HeaderComponent } from '../header/header.component';
+
+import { ThemeModuleModule } from '../../@modules/theme-module/theme-module.module'  // Added this line
 
 @Component({
   selector: 'app-about-us',
-  imports: [],
-  templateUrl: './about-us.component.html',
+   standalone:true,
+   imports:[HeaderComponent,ThemeModuleModule],
+  templateUrl: './about-us.component.html',  
   styleUrl: './about-us.component.scss'
 })
 export class AboutUsComponent {
