@@ -1,0 +1,27 @@
+
+<div class="top">
+    <app-header></app-header>
+
+</div>
+<div class="bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                @for (item of loopData(); track item.id) {
+                    <h2>About {{item.title}}</h2>
+                    <p>{{item.description[0]}}</p>
+                    @if(item.description.length > 1){   
+                        <p>{{item.description[1]}}</p>
+                    }
+                  }
+            </div>
+            <div class="col-6">
+                @for (item of loopData(); track item.id) {
+                    <p-image [src]="item.imgUrl" alt="Image"  />
+                  }
+            </div>
+        </div>
+     
+    </div>
+</div>
+

@@ -6,7 +6,8 @@
         <nav>
             <p-menubar [model]="items" >
                 <ng-template  #item let-item>
-                    <a routerLink="about-us" class="p-menubar-item-link">
+                    <!-- <a routerLink="/about-us">Heroes</a> -->
+                    <a [routerLink]="item.route" class="p-menubar-item-link">
                         <span [class]="item.icon"></span>
                         <span class="ml-2">{{ item.label }}</span>
                     </a>

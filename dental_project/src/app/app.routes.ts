@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { Routes,RouterModule } from '@angular/router';
 
 
 export const routes: Routes = [
@@ -11,4 +11,12 @@ export const routes: Routes = [
         path: 'about-us',
         loadChildren: () => import('./@modules/about-us/about-us.module').then((m) => m.AboutUsModule)
     },
+    {
+        path: 'services',
+        loadChildren: () => import('./@modules/ser-ces/ser-ces.module').then((m) => m.SerCesModule)
+    },
 ];
+    
+
+  
+
