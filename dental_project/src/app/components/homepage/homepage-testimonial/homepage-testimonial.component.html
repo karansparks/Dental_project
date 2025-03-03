@@ -1,10 +1,14 @@
 
-<p-carousel [value]="products" [numVisible]="2" [numScroll]="3"  >
-    <ng-template let-product #item>
-        <div class="border border-surface rounded-border m-2 p-4 bg-white">
-            <p class="text-center">,,</p>
-            <p>"he left the army with a glowing testimonial from his commanding officer,they presented him with a small testimonial in recognition of his service"</p>
-            <p-avatar label="P" styleClass="mr-2" size="xlarge" shape="circle" class="text-center" />
-        </div>
-    </ng-template>
-</p-carousel>
+<div class="bg-padd text-center">
+    <h2 class="sec-title">What our great customers say about Dr. gopi Shankar</h2>
+    <p-carousel [value]="products" [numVisible]="3" [numScroll]="3"  >
+        <ng-template let-product #item>
+            <div class="border border-surface rounded-border m-2 p-4 bg-white">
+                <p class="text-center">,,</p>
+                <p>"he left the army with a glowing testimonial from his commanding officer,they presented him with a small testimonial in recognition of his service"</p>
+                <p-avatar label="P" styleClass="mr-2" size="xlarge" shape="circle" class="text-center" />
+            </div>
+        </ng-template>
+    </p-carousel>
+</div>
+

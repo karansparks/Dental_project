@@ -4,7 +4,11 @@
         <app-header></app-header>
 
     </div>
-    <div class="row bg-white">
+    <!-- <div class="row bg-white">
+        <div class="col-6">
+            <p-image src="./doctor.jpeg" alt="Image"  />
+    
+        </div>
         <div class="col-6">
             <h2>Why Choose Smile For All Your Dental Treatments?</h2>
             <p> we use only the best qulaity materials on the market in order to provide hte best products to our patients.</p>
@@ -17,8 +21,32 @@
       <p-button label="Call us today" />
     
         </div>
-        <div class="col-6">
-            <p-image src="./doctor.jpeg" alt="Image"  />
+    
+    </div> -->
+    <div class="row bg-white py-5 ">
+        <div class="col-6 d-flex justify-content-center align-items-center">
+            <p-image src="./doctor_4.png" alt="Image"   width="450" />
     
         </div>
+        <div class="col-6">
+            <h2>Why Choose Smile For All Your Dental Treatments?</h2>
+            <p> we use only the best qulaity materials on the market in order to provide hte best products to our patients.</p>
+            <ul>
+                <li>Top Quality dental team</li>
+                <li>State of the art dental services</li>
+                <li>Discount on all dental treatment</li>
+                <li>Enrollment is quick and easy</li>
+            </ul>
+      <p-button label="Call us today" />
+    
+        </div>
+        <p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="true" [responsiveOptions]="responsiveOptions" autoplayInterval="3000">
+            <ng-template let-product #item>
+           <div>
+            <img [src]="product.url" alt="" class="bf">
+            </div>
+            </ng-template>
+        </p-carousel>
     </div>
+   
+    

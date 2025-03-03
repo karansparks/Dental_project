@@ -6,4 +6,23 @@
 
   body{
     background: #D9EEEC;
+    position:relative;
+}
+
+.log{
+  font-family: 'MyFont';
+  font-size: 4.5rem;
+  line-height: 74px;
+  color:black;
+  // font-weight: bold; 
+  letter-spacing: -5px; 
+}
+
+.sec-title{
+  font-family: 'MyFont';
+  font-size: 2rem;
+  line-height: 74px;
+  color:black;
+  // font-weight: bold; 
+  letter-spacing: -1px; 
 }

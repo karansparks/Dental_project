@@ -11,6 +11,7 @@ import { HomepageServiceComponent } from '../../components/homepage/homepage-ser
 import { HomepageTestimonialComponent } from '../../components/homepage/homepage-testimonial/homepage-testimonial.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { AppointmentComponent } from '../../components/appointment/appointment.component';
+import { WappComponent } from '../../components/wapp/wapp.component';
 
 const routes: Routes = [
   {
@@ -28,7 +29,8 @@ const routes: Routes = [
    RouterModule.forChild(routes),
    HeaderComponent,
    AppointmentComponent,
-   FooterComponent
+   FooterComponent,
+   WappComponent
     
   ]
 })

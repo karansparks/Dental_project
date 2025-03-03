@@ -2,5 +2,25 @@ p-image img{
     width:60% !important;
 }.log{
     font-family: 'MyFont';
-    font-size: 5.5rem;
+    font-size: 4.5rem;
+    line-height: 74px;
+    color:black;
+    // font-weight: bold; 
+    letter-spacing: -5px; 
+}
+
+.background_img{
+    background-image: url('../../../../../public/girl_1.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 80vh;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // color: white;
+    // font-family: 'MyFont';
+    // font-size: 5.5rem;
+    // text-align: center;
+    // text-shadow: 2px 2px 4px #000000;
 }
