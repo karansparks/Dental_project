@@ -48,6 +48,81 @@ export class HeaderComponent {
                 
                 }
             },
+            {
+                label: 'Clear aligner',
+                icon: 'pi pi-bolt',
+                command: () => {
+                    this.router.navigate(['/services']);
+                    this.servicesData.messageFirst.next(3);
+                
+                }
+            },
+            {
+                label: 'Root Canal Therapy',
+                icon: 'pi pi-bolt',
+                command: () => {
+                    this.router.navigate(['/services']);
+                    this.servicesData.messageFirst.next(4);
+                
+                }
+            },
+            {
+                label: 'Dental Implants',
+                icon: 'pi pi-bolt',
+                command: () => {
+                    this.router.navigate(['/services']);
+                    this.servicesData.messageFirst.next(5);
+                
+                }
+            },
+            {
+                label: 'Infection Control',
+                icon: 'pi pi-bolt',
+                command: () => {
+                    this.router.navigate(['/services']);
+                    this.servicesData.messageFirst.next(6);
+                
+                }
+            },
+            {
+                label: 'Gum Therapy',
+                icon: 'pi pi-bolt',
+                command: () => {
+                    this.router.navigate(['/services']);
+                    this.servicesData.messageFirst.next(7);
+                
+                }
+            },
+            {
+                label: 'Teeth Whitening',
+                icon: 'pi pi-bolt',
+                command: () => {
+                    this.router.navigate(['/services']);
+                    this.servicesData.messageFirst.next(8);
+                
+                }
+            },
+            {
+                label: 'Extraction & Wisdom Teeth Removal',
+                icon: 'pi pi-bolt',
+                command: () => {
+                    this.router.navigate(['/services']);
+                    this.servicesData.messageFirst.next(9);
+                
+                }
+            },
+            {
+                label: ' Kids Dentistry',
+                icon: 'pi pi-bolt',
+                command: () => {
+                    this.router.navigate(['/services']);
+                    this.servicesData.messageFirst.next(10);
+                
+                }
+            }
+
+
+
 
         ]
     },

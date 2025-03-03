@@ -10,6 +10,7 @@ import { SectionOneComponent } from '../../components/homepage/section-one/secti
 import { HomepageServiceComponent } from '../../components/homepage/homepage-service/homepage-service.component';
 import { HomepageTestimonialComponent } from '../../components/homepage/homepage-testimonial/homepage-testimonial.component';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { AppointmentComponent } from '../../components/appointment/appointment.component';
 
 const routes: Routes = [
   {
@@ -20,12 +21,14 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomepageComponent,MainContentComponent,SectionOneComponent,HomepageServiceComponent,HomepageTestimonialComponent],
+  declarations: [HomepageComponent,MainContentComponent,SectionOneComponent,HomepageServiceComponent,HomepageTestimonialComponent,],
   imports: [
     CommonModule,
     ThemeModuleModule,
    RouterModule.forChild(routes),
-   HeaderComponent
+   HeaderComponent,
+   AppointmentComponent,
+   FooterComponent
     
   ]
 })

@@ -6,8 +6,11 @@ import { MenubarModule } from 'primeng/menubar';
 import { ListboxModule } from 'primeng/listbox';
 import { CarouselModule } from 'primeng/carousel';
 import { Tag } from 'primeng/tag';
+import { InputTextModule } from 'primeng/inputtext';
 import { CardModule } from 'primeng/card';
-
+import { FluidModule } from 'primeng/fluid';
+import { AvatarModule } from 'primeng/avatar';
+import { AvatarGroupModule } from 'primeng/avatargroup';
 @NgModule({
   declarations: [],
   imports: [
@@ -16,8 +19,12 @@ import { CardModule } from 'primeng/card';
     CarouselModule,
     Tag,
     CardModule,
-    MenubarModule
+    MenubarModule,
+    FluidModule,
+    InputTextModule,
+    AvatarModule,
+    AvatarGroupModule
   ],
-  exports: [ButtonModule,ImageModule,MenubarModule,ListboxModule,CarouselModule,Tag,CardModule]
+  exports: [ButtonModule,ImageModule,MenubarModule,ListboxModule,CarouselModule,Tag,CardModule,InputTextModule,FluidModule,AvatarModule,AvatarGroupModule]
 })
 export class ThemeModuleModule { }

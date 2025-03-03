@@ -1,19 +1,10 @@
 
-
-<div class="row">
-    <p-card header="Simple Card">
-        <p class="m-0">
-            Lorem ipsum dolor sit amet...
-        </p>
-    </p-card>
-    <p-card header="Simple Card">
-        <p class="m-0">
-            Lorem ipsum dolor sit amet...
-        </p>
-    </p-card>
-    <p-card header="Simple Card">
-        <p class="m-0">
-            Lorem ipsum dolor sit amet...
-        </p>
-    </p-card>
-</div>
+<p-carousel [value]="products" [numVisible]="2" [numScroll]="3"  >
+    <ng-template let-product #item>
+        <div class="border border-surface rounded-border m-2 p-4 bg-white">
+            <p class="text-center">,,</p>
+            <p>"he left the army with a glowing testimonial from his commanding officer,they presented him with a small testimonial in recognition of his service"</p>
+            <p-avatar label="P" styleClass="mr-2" size="xlarge" shape="circle" class="text-center" />
+        </div>
+    </ng-template>
+</p-carousel>
