@@ -1,14 +1,24 @@
 
-<div class="bg-padd text-center">
-    <h2 class="sec-title">What our great customers say about Dr. gopi Shankar</h2>
-    <p-carousel [value]="products" [numVisible]="3" [numScroll]="3"  >
-        <ng-template let-product #item>
-            <div class="border border-surface rounded-border m-2 p-4 bg-white">
-                <p class="text-center">,,</p>
-                <p>"he left the army with a glowing testimonial from his commanding officer,they presented him with a small testimonial in recognition of his service"</p>
-                <p-avatar label="P" styleClass="mr-2" size="xlarge" shape="circle" class="text-center" />
-            </div>
-        </ng-template>
-    </p-carousel>
+<div class=" text-center">
+    <h2 class="sec-title log position-relative">What our great customers say about Dr. gopi Shankar
+        <span class="blur-bg in-img top-0 start-0 "> a</span>
+    </h2>
+    <div class="row">
+        <div class="col-6 pad-t">
+            <p-carousel [value]="products" [numVisible]="1" [numScroll]="7"  >
+                <ng-template let-product #item>
+                    <div class="border border-surface rounded-border m-2 p-4 bg-white">
+                        <img src="./comma.png" alt="" width="70" class="pb-4" />
+                        <p>"he left the army with a glowing testimonial from his commanding officer,they presented him with a small testimonial in recognition of his service"</p>
+                        <img src="./test_1.jpeg" alt="" class="rounded-circle" width="70" height="80" />
+                    </div>
+                </ng-template>
+            </p-carousel>
+        </div>
+        <div class="col-6">
+            <img src="./testi.png" alt="" width="700" />
+        </div>
+    </div>
+    
 </div>
 

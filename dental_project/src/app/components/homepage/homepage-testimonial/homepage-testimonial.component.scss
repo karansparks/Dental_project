@@ -1,4 +1,15 @@
-.bg-padd{
-    padding-top:50px;
-    padding-bottom:50px;
+.pad-t{
+    padding-top: 100px;
 }
+
+.blur-bg{
+    background-color: rgb(0, 255, 26);
+    position:absolute;
+}
+
+.in-img{
+
+    width:7%;
+    filter: blur(90px);
+  
+ }

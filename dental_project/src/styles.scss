@@ -4,9 +4,17 @@
     src: url('./assests/Lexend/Lexend-VariableFont_wght.ttf');
   }
 
+
+  @font-face {
+    font-family: 'descrip';
+    src: url('./assests/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf');
+  }
+
+  $secondary-color:#00af9f;
   body{
-    background: #D9EEEC;
+    // background: #D9EEEC;
     position:relative;
+    font-family: 'descrip';
 }
 
 .log{
@@ -19,10 +27,67 @@
 }
 
 .sec-title{
-  font-family: 'MyFont';
+  font-family: 'descrip';
   font-size: 2rem;
   line-height: 74px;
   color:black;
   // font-weight: bold; 
   letter-spacing: -1px; 
 }
+
+
+.f-3rem{
+  font-size:3rem !important;
+}
+
+.bg-padd{
+  padding-top:150px;
+  padding-bottom:200px;
+}
+
+.dark_bg{
+ background-color: secondary-color;
+}
+
+p-button button{
+  border-radius:25px !important;
+}
+
+.p-menubar {
+  background:none !important;
+  border:none !important;
+}
+
+.info-w{
+  max-width:70%;
+  font-size:14px;
+}
+
+.log{
+  font-family: 'MyFont';
+  font-size: 4.5rem;
+  line-height: 74px;
+  // position:relative;
+  color:black;
+  // font-weight: bold; 
+  letter-spacing: -5px; 
+}
+
+.border{
+  border:none !important;
+}
+
+.blur-bg{
+  background-color: rgb(0, 255, 26);
+  position:absolute;
+}
+
+
+
+.cl-green{
+  color:green
+}
+
+.input-shadow{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px !important; 
+} 

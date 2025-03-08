@@ -1,8 +1,16 @@
 .top{
     background-image: url("../../../../public/Untitled\ design\ \(2\).png");
-    height:400px;   
+    height:350px;   
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     
+}
+
+.des_img span img{
+    width:50%;
+    height:auto;
+}
+.p-8rem{
+    padding:8rem;
 }
