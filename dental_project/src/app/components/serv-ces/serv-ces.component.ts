@@ -2,11 +2,14 @@ import { Component, OnInit , signal , inject } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { ThemeModuleModule } from '../../@modules/theme-module/theme-module.module';
 import { SharedServiceService } from '../../services/shared-service.service';
+import { AppointmentComponent } from '../appointment/appointment.component';
+import { FooterComponent } from '../footer/footer.component';
+import { FaqComponent } from '../faq/faq.component';
 
 @Component({
   selector: 'app-serv-ces',
   standalone:true,
-  imports:[HeaderComponent,ThemeModuleModule],
+  imports:[HeaderComponent,ThemeModuleModule,AppointmentComponent,FooterComponent,FaqComponent],
   templateUrl: './serv-ces.component.html',
   styleUrl: './serv-ces.component.scss'
 })
@@ -43,9 +46,11 @@ export class ServCesComponent implements OnInit {
 {
   id:5,
   title : 'Dental Implants',
-  imgUrl:'./doctor.jpeg',
+  imgUrl:'./services/dental_implants.jpeg',
+  imgUrl1:'./services/dental_implants.jpeg',
   style: 'width: 50%;height: auto;',
-  description : ['Get ready to say goodbye to gaps and hello to a new set of pearly whites with our Dental Implants service. Whether you’re missing one tooth or several, our team of experts will give you a smile that will knock your socks off! Our state-of-the-art technology and techniques ensure that your dental implants look and feel like your natural teeth. With our Dental Implants, you’ll be able to eat, speak, and smile with confidence again.','Dental implants are metal screw-like structures that are surgically placed in the jawbone to replace missing teeth. They act as an anchor for an overlying crown. Dental implant can be used to replace a single missing tooth. Missing teeth can cause several problems, such as:Problem 1: The gap from a missing tooth can cause the neighboring teeth to shift out of place as they try to fill the space.Problem 2: The adjacent teeth may begin to tilt towards the empty space.Problem 3: The jawbone may shrink in height and density as the tooth is no longer there to provide stimulation and support.','Dental implants are placed in the jawbone and allowed to heal for about three months. During this time, the bone around the implant grows and fuses with the implant, providing added stability. The result is a natural-looking replacement tooth that provides improved speech, making it easier to chew food, and eliminates the inconvenience of removable dentures. Additionally, dental implants do not require grinding down or reduction of other teeth and it is a conservative approach to replace a missing tooth. The success rate of implants is 98%.']
+  description : ['Get ready to say goodbye to gaps and hello to a new set of pearly whites with our Dental Implants service. Whether you’re missing one tooth or several, our team of experts will give you a smile that will knock your socks off! Our state-of-the-art technology and techniques ensure that your dental implants look and feel like your natural teeth. With our Dental Implants, you’ll be able to eat, speak, and smile with confidence again.','Dental implants are metal screw-like structures that are surgically placed in the jawbone to replace missing teeth. They act as an anchor for an overlying crown. Dental implant can be used to replace a single missing tooth. Missing teeth can cause several problems, such as:Problem 1: The gap from a missing tooth can cause the neighboring teeth to shift out of place as they try to fill the space.Problem 2: The adjacent teeth may begin to tilt towards the empty space.Problem 3: The jawbone may shrink in height and density as the tooth is no longer there to provide stimulation and support.','Dental implants are placed in the jawbone and allowed to heal for about three months. During this time, the bone around the implant grows and fuses with the implant, providing added stability. The result is a natural-looking replacement tooth that provides improved speech, making it easier to chew food, and eliminates the inconvenience of removable dentures. Additionally, dental implants do not require grinding down or reduction of other teeth and it is a conservative approach to replace a missing tooth. The success rate of implants is 98%.'],
+  description1:['Get ready to say goodbye to gaps and hello to a new set of pearly whites with our Dental Implants service. Whether you’re missing one tooth or several, our team of experts will give you a smile that will knock your socks off! Our state-of-the-art technology and techniques ensure that your dental implants look and feel like your natural teeth. With our Dental Implants, you’ll be able to eat, speak, and smile with confidence again.','Dental implants are metal screw-like structures that are surgically placed in the jawbone to replace missing teeth. They act as an anchor for an overlying crown. Dental implant can be used to replace a single missing tooth. Missing teeth can cause several problems, such as:Problem 1: The gap from a missing tooth can cause the neighboring teeth to shift out of place as they try to fill the space.Problem 2: The adjacent teeth may begin to tilt towards the empty space.Problem 3: The jawbone may shrink in height and density as the tooth is no longer there to provide stimulation and support.','Dental implants are placed in the jawbone and allowed to heal for about three months. During this time, the bone around the implant grows and fuses with the implant, providing added stability. The result is a natural-looking replacement tooth that provides improved speech, making it easier to chew food, and eliminates the inconvenience of removable dentures. Additionally, dental implants do not require grinding down or reduction of other teeth and it is a conservative approach to replace a missing tooth. The success rate of implants is 98%.']
 },{
   id:6,
   title : 'Infection Control',

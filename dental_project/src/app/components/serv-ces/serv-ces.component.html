@@ -1,27 +1,49 @@
 
 <div class="top">
     <app-header></app-header>
+    @for (item of loopData(); track item.id) {
 
+        <h1 class="fw-bold text-center text-white pt-5">{{item.title}}</h1>
+    }
+    
 </div>
 <div class="bg-white">
     <div class="container">
-        <div class="row p-8rem">
+        <div class="row p-8rem pb-0">
             <div class="col-6">
                 @for (item of loopData(); track item.id) {
-                    <h2 class="f-3rem">About {{item.title}}</h2>
-                    <p>{{item.description[0]}}</p>
+                    <h2 class="f-3rem">About <span class="text-success">{{item.title}}</span></h2>
+                    <p class="lineHt-30">{{item.description[0]}}</p>
                     @if(item.description.length > 1){   
-                        <p>{{item.description[1]}}</p>
+                        <p class="lineHt-30">{{item.description[1]}}</p>
                     }
                   }
             </div>
-            <div class="col-6">
+            <div class="col-6 text-center">
                 @for (item of loopData(); track item.id) {
-                    <p-image [src]="item.imgUrl" alt="Image" width="50%" height="auto" />
+                    <p-image [src]="item.imgUrl" alt="Image" width="70%" height="auto" class="borrad-50" />
                   }
             </div>
         </div>
-     
+        <div class="row p-8rem ">
+            <div class="col-6 text-center">
+                @for (item of loopData(); track item.id) {
+                    <p-image [src]="item.imgUrl1" alt="Image" width="70%" height="auto" class="borrad-50" />
+                  }
+            </div>
+            <div class="col-6">
+                @for (item of loopData(); track item.id) {
+                    <p class="lineHt-30">{{item.description1[0]}}</p>
+                    @if(item.description1.length > 1){   
+                        <p class="lineHt-30">{{item.description1[1]}}</p>
+                    }
+                  }
+            </div>
+        </div>
     </div>
+    <app-faq></app-faq>
+    <app-appointment></app-appointment>
+    <app-footer></app-footer>
+    
 </div>
 

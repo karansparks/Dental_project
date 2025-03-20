@@ -10,6 +10,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { CardModule } from 'primeng/card';
 import { FluidModule } from 'primeng/fluid';
 import { AvatarModule } from 'primeng/avatar';
+import { AccordionModule } from 'primeng/accordion';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 @NgModule({
   declarations: [],
@@ -23,8 +24,9 @@ import { AvatarGroupModule } from 'primeng/avatargroup';
     FluidModule,
     InputTextModule,
     AvatarModule,
+    AccordionModule,
     AvatarGroupModule
   ],
-  exports: [ButtonModule,ImageModule,MenubarModule,ListboxModule,CarouselModule,Tag,CardModule,InputTextModule,FluidModule,AvatarModule,AvatarGroupModule]
+  exports: [ButtonModule,ImageModule,MenubarModule,ListboxModule,CarouselModule,Tag,CardModule,InputTextModule,FluidModule,AvatarModule,AccordionModule,AvatarGroupModule]
 })
 export class ThemeModuleModule { }
