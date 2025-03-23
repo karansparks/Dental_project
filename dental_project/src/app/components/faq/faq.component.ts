@@ -10,12 +10,20 @@ import { SharedServiceService } from '../../services/shared-service.service';
 })
 export class FaqComponent {
    servicesData = inject(SharedServiceService);
-  tabs = [{
+  tabs = [
+    {
     id:5,
     faq:[ { question: 'Title 1', answer: 'Content 1', value: '0' },
       { question: 'Title 2', answer: 'Content 2', value: '1' },
       { question: 'Title 3', answer: 'Content 3', value: '2' }]
-  }
+  },
+  {
+    id:1,
+    faq:[ { question: 'Title 1', answer: 'Content 1', value: '0' },
+      { question: 'Title 2', answer: 'Content 2', value: '1' },
+      { question: 'Title 3', answer: 'Content 3', value: '2' }]
+  },
+
    
 ];
 havingData = signal<boolean>(false);

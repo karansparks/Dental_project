@@ -1,3 +1,6 @@
+$font-size-medium: 5rem;
+
+
 .top{
     background-image: url("../../../../public/Untitled\ design\ \(2\).png");
     height:400px;   
@@ -16,3 +19,17 @@
 .bg-shadow{
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
+
+.number_design{
+   font-size : $font-size-medium !important;
+}
+// .typing-text {
+//     font-size: 2rem;
+//     font-weight: bold;
+//     color: #333;
+//     font-family: 'Courier New', monospace;
+//     white-space: nowrap;
+//     border-right: 2px solid black; /* Cursor effect */
+//     display: inline-block;
+//   }
+  

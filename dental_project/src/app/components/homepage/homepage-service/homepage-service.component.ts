@@ -12,6 +12,17 @@ export class HomepageServiceComponent implements OnInit {
   products: any;
 
   responsiveOptions: any[] | undefined;
+
+  services: any[] = [
+    {url:'./services_logo/braces_log.png',name:'Dental Care'},
+    {url:'./services_logo/dentures.png',name:'dentures'},
+    {url:'./services_logo/infection.png',name:'Infectin control'},
+    {url:'./services_logo/whitening.png',name:'whitening'},
+    {url:'./services_logo/root_canal.png',name:'root_canal'},
+    {url:'./services_logo/dental-implant.png',name:'dental-implant'},
+    {url:'./services_logo/removal.png',name:'removal'},
+    {url:'./services_logo/kids.png',name:'kids'},
+    {url:'./services_logo/clear.png',name:'Clear Aligner'}]
   
   constructor() {}
 

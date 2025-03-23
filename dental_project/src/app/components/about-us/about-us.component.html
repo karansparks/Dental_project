@@ -1,9 +1,9 @@
 
 
-    <div class="top">
+ 
         <app-header></app-header>
 
-    </div>
+   
     <!-- <div class="row bg-white">
         <div class="col-6">
             <p-image src="./doctor.jpeg" alt="Image"  />
@@ -23,14 +23,53 @@
         </div>
     
     </div> -->
-    <div class="row bg-white py-5 ">
-        <div class="col-6 d-flex justify-content-center align-items-center">
-            <p-image src="./doctor_4.png" alt="Image"   width="450" />
-            <p-image src="./doct_3d.png" alt="Image"   width="150" class="bg-shadow" />
-    
-    
+    <div class="row bg-white py-5 justify-content-center container-fluid">
+        <h1 #text></h1> <span #texts class="typing-text">_</span>
+
+        <div class="col-4">
+            <div class="row">
+                <div class="col-12 text-end">
+                    <h1 class="fw-bold number_design">01</h1>
+                    <h5>Welcome to [Your Clinic Name]</h5>
+                    <p>At [Your Clinic Name], we are committed to providing exceptional dental care in a comfortable environment. Our goal is to help you achieve a healthier, more confident smile.</p>
+                </div>
+                <div class="col-12 text-end">
+                    <h1 class="fw-bold number_design">02</h1>
+                    <h5>Our Expertise & Experience</h5>
+                    <p>Led by Dr. [Your Name], we offer a wide range of dental treatments, from routine checkups to advanced procedures. With [X] years of experience, we ensure high-quality and painless care.</p>
+                </div>
+                <div class="col-12 text-end">
+                    <h1 class="fw-bold number_design">03</h1>
+                    <h5>Our Mission & Values</h5>
+                    <p>We believe in honest, patient-focused, and high-quality dental care. Our mission is to provide stress-free, advanced treatments with a focus on trust and transparency.</p>
+                </div>
+            </div>
         </div>
-        <div class="col-6">
+        <div class="col-3 text-center">
+            <p-image src="./doctor_1.png" alt="Image"   width="350" />
+            
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-12 text-start">
+                    <h1 class="fw-bold number_design">04</h1>
+                    <h5> Before & After Transformations</h5>
+                    <p>See the difference a great smile can make! Our before-and-after gallery showcases real patient transformations through expert dental care.</p>
+                </div>
+                <div class="col-12 text-start">
+                    <h1 class="fw-bold number_design">05</h1>
+                    <h5>Why Choose Us?</h5>
+                    <p>We offer advanced technology, pain-free treatments, and a welcoming environment. Our expert team ensures top-notch care with flexible and affordable options.</p>
+                </div>
+                <div class="col-12 text-start">
+                    <h1 class="fw-bold number_design">06</h1>
+                    <h5>Book Your Appointment Today!</h5>
+                    <p>A beautiful smile starts here! Contact us today to schedule your visit and take the first step toward better oral health.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="col-6">
             <h2>Why Choose Smile For All Your Dental Treatments?</h2>
             <p> we use only the best qulaity materials on the market in order to provide hte best products to our patients.</p>
             <ul>
@@ -41,14 +80,16 @@
             </ul>
       <p-button label="Call us today" />
     
-        </div>
-        <p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="true" [responsiveOptions]="responsiveOptions" autoplayInterval="3000">
+        </div> -->
+        <!-- <p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="true" [responsiveOptions]="responsiveOptions" autoplayInterval="3000">
             <ng-template let-product #item>
            <div>
             <img [src]="product.url" alt="" class="bf">
             </div>
             </ng-template>
-        </p-carousel>
+        </p-carousel> -->
+       
+    
     </div>
    
     
