@@ -3,8 +3,8 @@
     <div class="container">
         <h2 class="f-3rem text-center">FREQUENTLY ASKED QUESTIONS</h2>
         <p-accordion [value]="0">
-            @for (group of tabs; track group.id) {
-            @for (tab of group.faq; track tab.question) {
+            <!-- @for (group of faqData; track group.id) { -->
+            @for (tab of faqData.faq; track tab.question) {
                 <p-accordion-panel [value]="tab.value">
                     <p-accordion-header>{{ tab.question }}</p-accordion-header>
                     <p-accordion-content>
@@ -12,7 +12,7 @@
                     </p-accordion-content>
                 </p-accordion-panel>
             }
-        }
+        <!-- } -->
     
         </p-accordion>
     </div>

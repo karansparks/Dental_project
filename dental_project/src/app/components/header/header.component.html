@@ -1,5 +1,5 @@
 
-    <header class="d-flex justify-content-between align-items-center">
+    <header class="d-flex justify-content-between align-items-center text-dark">
         <div class="">
               <p-image src="./logo.jpg" alt="Image" width="100" />
             </div>
@@ -9,13 +9,16 @@
                     <!-- <a routerLink="/about-us">Heroes</a> -->
                     <a [routerLink]="item.route" class="p-menubar-item-link">
                         <span [class]="item.icon"></span>
-                        <span class="ml-2">{{ item.label }}</span>
+                        <span class="ml-2 text-dark">{{ item.label }}</span>
                     </a>
                 </ng-template>
             </p-menubar>
         </nav>
         <div>
-            <p-button label="contact us" />
+            <a href="https://wa.me/9787251946" target="_blank">
+                <p-button label="chat with doctor" />
+            </a>
+           
         </div>
     </header>
   

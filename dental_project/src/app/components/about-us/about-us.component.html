@@ -26,7 +26,7 @@
     <div class="row bg-white py-5 justify-content-center container-fluid">
         <h1 #text></h1> <span #texts class="typing-text">_</span>
 
-        <div class="col-4">
+        <div class="col-4 mb-5">
             <div class="row">
                 <div class="col-12 text-end">
                     <h1 class="fw-bold number_design">01</h1>
@@ -88,8 +88,30 @@
             </div>
             </ng-template>
         </p-carousel> -->
-       
+        <h1 class=" fw-bold text-center my-5">Changing Smile Changing Lives </h1>
+       <div class="width-600" >
+        
+<p-carousel [value]="products" [numVisible]="1" [numScroll]="1" [circular]="false" [responsiveOptions]="responsiveOptions">
+    <ng-template let-product #item>
+        <p-imagecompare class="shadow-lg rounded-2xl h-50">
+            <ng-template #left>
+                <img [src]="product.url" width="100px" />
+            </ng-template>
+            <ng-template #right>    
+                <img [src]="product.url2" width="100px" />
+            </ng-template>
+         
+        </p-imagecompare>
     
+    </ng-template>
+
+</p-carousel>
+       </div>
+      
     </div>
+
+    <!-- <app-homepage-service></app-homepage-service> -->
+    <app-appointment></app-appointment>
+    <app-footer></app-footer>
    
     

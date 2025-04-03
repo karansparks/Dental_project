@@ -126,9 +126,9 @@ export class HeaderComponent {
 
         ]
     },
-    {
-        label: 'Contact',
-        icon: 'pi pi-envelope'
-    }
+    // {
+    //     label: 'Contact',
+    //     icon: 'pi pi-envelope'
+    // }
 ]
 }

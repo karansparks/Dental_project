@@ -12,6 +12,8 @@ import { FluidModule } from 'primeng/fluid';
 import { AvatarModule } from 'primeng/avatar';
 import { AccordionModule } from 'primeng/accordion';
 import { AvatarGroupModule } from 'primeng/avatargroup';
+import { ImageCompareModule } from 'primeng/imagecompare';
+import { AnimateOnScroll } from 'primeng/animateonscroll';
 @NgModule({
   declarations: [],
   imports: [
@@ -25,8 +27,10 @@ import { AvatarGroupModule } from 'primeng/avatargroup';
     InputTextModule,
     AvatarModule,
     AccordionModule,
-    AvatarGroupModule
+    AvatarGroupModule,
+    ImageCompareModule,
+    AnimateOnScroll
   ],
-  exports: [ButtonModule,ImageModule,MenubarModule,ListboxModule,CarouselModule,Tag,CardModule,InputTextModule,FluidModule,AvatarModule,AccordionModule,AvatarGroupModule]
+  exports: [ButtonModule,ImageModule,ImageCompareModule,MenubarModule,ListboxModule,CarouselModule,Tag,CardModule,InputTextModule,FluidModule,AvatarModule,AccordionModule,AvatarGroupModule,AnimateOnScroll]
 })
 export class ThemeModuleModule { }

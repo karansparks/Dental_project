@@ -1,6 +1,7 @@
 <div class="row bg-white bg-padd ">
     <div class="col-6 d-flex justify-content-center align-items-center position-relative">
-        <p-image src="./doctor_4.png" alt="Image"  width="500" />
+
+        <p-image src="./lady_doc.jpeg" alt="Image"  width="500" />
         <img src="./note.svg" alt="" class="position-absolute shadow_icon note3d "  #note3d width="50"/>
         <img src="./medbox.svg" alt="" class="position-absolute shadow_icon tablet3d" #tablet3d width="50"/>
         <!-- <img src="./tablet.svg" alt="" class="position-absolute shadow_icon box3d" width="50"/> -->
@@ -8,11 +9,14 @@
         <!-- <span class="position-absolute blur-bg in-img tOp">a</span> -->
 
     </div>
-    <div class="col-6 position-relative">
+  
+    <div class="col-6 position-relative h-[30rem]" pAnimateOnScroll
+    enterClass="animate-zoomin"
+    leaveClass="animate-fadeout">
           <span class="position-absolute blur-bg in-img top-50 end-50">a</span>
         <h2 class="log mb-4 ">Why Choose Smile For All Your Dental Treatments?</h2>
         <p class="ps-3 info-w"> we use only the best qulaity materials on the market in order to provide hte best products to our patients.</p>
-        <ul class="mb-4 ms-2 info-w">
+        <ul class="mb-4 ms-2 info-w fw-bold">
             <li>Top Quality dental team</li>
             <li>State of the art dental services</li>
             <li>Discount on all dental treatment</li>

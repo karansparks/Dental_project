@@ -100,3 +100,25 @@ line-height: 30px;
 .borrad-50 img{
   border-radius:50% !important;
 }
+
+.p-imagecompare {
+  position:static !important;
+  width:300px !important;
+  height:300px !important;
+  display:block;
+}
+
+.p-imagecompare img{
+  object-fit:cover
+}
+
+.p-menubar-item-content:hover{
+  background:#00af9f !important;
+  border-radius:18px !important;
+  color:white !important;
+}
+
+.p-menubar-submenu{
+  background-color: white !important;
+  border:none !important;
+}

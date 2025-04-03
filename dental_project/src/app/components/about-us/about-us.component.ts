@@ -3,26 +3,42 @@ import { gsap } from 'gsap';
 import { HeaderComponent } from '../header/header.component';
 import { ThemeModuleModule } from '../../@modules/theme-module/theme-module.module'  // Added this line
 import { TextPlugin } from 'gsap/TextPlugin';
+import { AppointmentComponent } from '../appointment/appointment.component';
+import { HomepageServiceComponent } from '../homepage/homepage-service/homepage-service.component';
+import { FooterComponent } from '../footer/footer.component';
 gsap.registerPlugin(TextPlugin);
 @Component({
   selector: 'app-about-us',
    standalone:true,
-   imports:[HeaderComponent,ThemeModuleModule],
+   imports:[HeaderComponent,ThemeModuleModule,AppointmentComponent,FooterComponent],
   templateUrl: './about-us.component.html',  
   styleUrl: './about-us.component.scss'
 })
 export class AboutUsComponent implements  AfterViewInit{
-  products: any | undefined = [{
-url:'./bf1.jpeg'
-},{
-url:'./bf2.jpeg'
-},{
-url:'./bf3.jpeg'
-},{
- url:'./bf1.jpeg'
-},{
-url:'./bf1.jpeg'
-},];
+  products: any | undefined = [
+    
+    {
+url:'./before.jpeg',
+url2:'./after.jpeg'
+
+},
+
+{
+url:'./about_us.jpeg',
+url2:'./bf3.jpeg'     
+},
+
+{
+url:'./before.jpeg',
+url2:'./after.jpeg'
+},
+
+{
+ url:'./before.jpeg',
+ url2:'./after.jpeg'
+}
+
+];
 @ViewChild('texts') box!: ElementRef;
 @ViewChild('text') texts!: ElementRef;
 words = ['I am a Dentitst Doctor,what i can do for you?']
@@ -56,17 +72,17 @@ words = ['I am a Dentitst Doctor,what i can do for you?']
       this.responsiveOptions = [
           {
               breakpoint: '1400px',
-              numVisible: 2,
+              numVisible: 1,
               numScroll: 1
           },
           {
               breakpoint: '1199px',
-              numVisible: 3,
+              numVisible: 1,
               numScroll: 1
           },
           {
               breakpoint: '767px',
-              numVisible: 2,
+              numVisible: 1,
               numScroll: 1
           },
           {
