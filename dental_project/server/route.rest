@@ -1,0 +1,19 @@
+GET http://localhost:3000/api/appointment
+
+###
+
+POST http://localhost:3000/api/appointment
+Content-Type: application/json
+
+{
+    "fullname": "hari karans",
+    "email": "karanhari564@gamil.com",
+    "phone": "978751946",
+    "location": "Chennai",
+    "insurance": "No",
+    "Treatment": "whitening",
+    "preTreatment": "whitening",
+    "addTreatment": "No",
+    "message": "sfddfsdf"
+}
+
