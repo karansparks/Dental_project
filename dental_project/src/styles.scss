@@ -15,6 +15,7 @@
     // background: #D9EEEC;
     position:relative;
     font-family: 'descrip';
+    overflow-x: hidden;
 }
 
 .log{
@@ -126,4 +127,13 @@ line-height: 30px;
 .p-button{
   color:white !important;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+
+.back{
+  background-image: url("../public/doctor_back.jpg");
+  height:400px;   
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 }

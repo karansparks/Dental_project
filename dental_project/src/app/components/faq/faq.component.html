@@ -1,19 +1,25 @@
 
 @if(havingData()){
-    <div class="container">
-        <h2 class="f-3rem text-center">FREQUENTLY ASKED QUESTIONS</h2>
-        <p-accordion [value]="0">
-            <!-- @for (group of faqData; track group.id) { -->
-            @for (tab of faqData.faq; track tab.question) {
-                <p-accordion-panel [value]="tab.value">
-                    <p-accordion-header>{{ tab.question }}</p-accordion-header>
-                    <p-accordion-content>
-                        <p class="m-0">{{ tab.answer }}</p>
-                    </p-accordion-content>
-                </p-accordion-panel>
-            }
-        <!-- } -->
+    <div class="position-relative">
+        <div class="container ">
+            <h2 class="f-3rem text-center">FREQUENTLY ASKED QUESTIONS</h2>
+            <p class="my-1 mb-5 text-center">There are most commonly asked questions about Zen Smile Dental</p>
+            <p-accordion [value]="0">
+                <!-- @for (group of faqData; track group.id) { -->
+                @for (tab of faqData.faq; track tab.question) {
+                    <p-accordion-panel [value]="tab.value">
+                        <p-accordion-header>{{ tab.question }}</p-accordion-header>
+                        <p-accordion-content>
+                            <p class="m-0">{{ tab.answer }}</p>
+                        </p-accordion-content>
+                    </p-accordion-panel>
+                }
     
-        </p-accordion>
+                <img src="./tooth-hygiene.png" alt="" class="position-absolute top-0 " style=" right:-90px ; width:200px ; transform: rotate(-40deg) " />
+            <!-- } -->
+        
+            </p-accordion>
+        </div>
     </div>
+ 
 }

@@ -3,14 +3,22 @@
         <!-- <p>Turning your smile into an experience</p> -->
 
     </h2>
-    <div class="row justify-content-center gap-3 mb-5">
-        @for (item of services; track item) {
-            <div class="col-2 py-5 bg-shadow">
-                <p-image [src]="item.url" alt="Image" width="100" />
-                <h3 class="fw-bold mt-3">{{item.name}}</h3>
-            </div>
-        }
+    <div class="row justify-content-center gap-5 mb-5">
+     
 
 
+    </div>
+
+
+    <div class="slider">
+        <div class="slide-track">
+         
+            @for (item of services; track item) {
+                <div class="col-1 py-5 bg-shadow slide me-5 m-3">
+                    <p-image [src]="item.url" alt="Image" width="100" />
+                    <h3 class="fw-bold mt-3">{{item.name}}</h3>
+                </div>
+            }
+        </div>
     </div>
 </div>

@@ -9,7 +9,13 @@ $font-size-medium: 5rem;
     background-position: center;
     
 }
-
+.design{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    border-radius:10px;
+    top:300px;
+    left:25%;
+    
+}
 .bf{
 
     width:400px;
@@ -36,4 +42,9 @@ $font-size-medium: 5rem;
 
 .width-600{
     width:600px !important;
+}
+
+.backg-green{
+    background-color: #bafc9e;
+    border-radius:15px;
 }
