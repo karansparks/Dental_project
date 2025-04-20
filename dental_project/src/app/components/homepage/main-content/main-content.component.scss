@@ -2,13 +2,21 @@ p-image img{
     width:60% !important;
 }
 
+.wrapper{
+    max-width: 1380px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top:10rem;
+    padding-bottom:10rem;
+
+}
 .background_img{
-    background-image: url('../../../../../public/smiles.png');
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    height: 80vh;
-    position:relative;
+    // background-image: url('../../../../../public/smiles.png');
+    // background-size:contain;
+    // background-repeat: no-repeat;
+    // background-position: top;
+    // height: 80vh;
+    // position:relative;
     // filter: drop-shadow(0 0 1.25rem rgb(188, 255, 188));
     // display: flex;
     // justify-content: center;
@@ -20,13 +28,16 @@ p-image img{
     // text-shadow: 2px 2px 4px #000000;
 }
 
-.background_img img{
-    width: 11%;
-    // filter: drop-shadow(0 0 3.25rem green);
-    top: 14%;
-    left: 75%;
-    filter: blur(90px);
-    background-color: rgb(0, 255, 26);
+.imgs{
+    position: absolute;
+    left: calc(50% - 10px);
+    top: -182px;
+    bottom: -10px;
+    width: 794px;
+    
+    max-width: calc(57% - 26px);
+    outline: 0;
+    outline-width: 0;
 }
 
 
@@ -40,6 +51,9 @@ p-image img{
  
 }
 
+.lefttext{
+    max-width: 709px;
+}
 .in-img{
 
     width:40%;

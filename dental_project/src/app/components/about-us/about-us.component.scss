@@ -9,25 +9,22 @@ $font-size-medium: 5rem;
     background-position: center;
     
 }
-.design{
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
-    border-radius:10px;
-    top:400px;
-    left:20%;
-    
-}
 
-.design1{
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
-    border-radius:10px;
-    top:200px;
-    right:20%;
-}
 .bf{
 
     width:400px;
     height:400px
 }
+
+.doc_1{
+    top:-100px;
+    left:400px;
+}
+.doc_2{
+    top:100px;
+    right:200px;
+}
+
 
 .bg-shadow{
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
@@ -48,7 +45,7 @@ $font-size-medium: 5rem;
   
 
 .width-600{
-    width:600px !important;
+    width:100% !important;
 }
 
 .backg-green{
@@ -58,4 +55,21 @@ $font-size-medium: 5rem;
 
 .fs-100{
     font-size:60px;
+}
+
+.before_card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: auto;
+}
+
+.case_img{
+    width:300px;
+    height:400px;
+    object-fit: cover;
+    
+}
+
+.case_text{
+    font-size:10rem;
+    font-weight: bolder;
 }

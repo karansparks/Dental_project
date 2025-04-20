@@ -25,10 +25,11 @@
         </div>
     
     </div> -->
-    <div class="row bg-white py-5 justify-content-center container-fluid">
+    <div class="row bg-white  justify-content-center container-fluid bg-padd">
 
-        <div class="col-6 position-relative d-flex justify-content-center">
-            <img src="./about_us_doc.png" alt="" width="400">
+        <div class="col-7 position-relative d-flex justify-content-center ">
+            <img src="./about_us_doc.png" alt="" width="300" class="position-absolute doc_1" >
+            <img src="./about_us_doc_2.png" alt="" width="350"class="position-absolute doc_2" >
             <div class="position-absolute   p-3  design  bg-white  rounded-2xl d-flex justify-content-center flex-column align-items-center">
                 <i class="fa-solid fa-heart-pulse text-danger fs-1"></i>
                    <h4 class="fw-bold">  1000+</h4>
@@ -43,9 +44,9 @@
             </div>
         </div>
 
-        <div class="col-6 backg-green pt-4 ps-3">
+        <div class="col-5 backg-green pt-4 ps-3">
             <h6 class="fw-bold text-success ">About Our Doctor</h6>
-            <h1 class="fw-bold">Crafting Confident Smiles with Care</h1>
+            <h1 class="fw-bold text-uppercase">Crafting Confident Smiles with Care</h1>
             <p class="text-gray-700 mb-4 fs-5 mt-3">
                 Dr. [Your Name] is a passionate and experienced dental professional who combines cutting-edge techniques
                 with compassionate care. With a focus on patient comfort and long-lasting results, Dr. [Your Name] has transformed
@@ -57,17 +58,24 @@
               <span><i class="fa-solid fa-tooth text-success fs-4"></i> Preventive Dental Care</span> 
 
 
-                <div class="mt-5 d-flex justify-content-start gap-5">
-                    <div>
-                        <h1 class="mb-0 fw-bold fs-100">500+</h1>
+                <div class="mt-5 d-flex justify-content-start  row">
+                    <div class="col-4">
+                       <div class="mb-0 fw-bold fs-100 fs-1 ">
+                        <h1 class="mb-0 fw-bold fs-100 d-inline-block " #counter>{{displayValue1}}</h1> +
+                       </div>
                         <p >Patients</p>
                     </div>
-                    <div>
-                        <h1 class="mb-0 fw-bold fs-100">200+</h1>
+
+                    <div class="col-4">
+                        <div class="mb-0 fw-bold fs-100 fs-1 ">
+                            <h1 class="mb-0 fw-bold fs-100 d-inline-block " #experience>{{displayValue2}}</h1> +
+                           </div>
                         <p >Patients</p>
                     </div>
-                    <div>
-                        <h1 class="mb-0 fw-bold fs-100">100+</h1>
+                    <div class="col-4">
+                        <div class="mb-0 fw-bold fs-100 fs-1 ">
+                            <h1 class="mb-0 fw-bold fs-100 d-inline-block " #patient>{{displayValue3}}</h1> +
+                           </div>
                         <p >Patients</p>
                     </div>
                    
@@ -160,29 +168,66 @@
             </div>
             </ng-template>
         </p-carousel> -->
-        <h1 class=" fw-bold text-center my-5">Changing Smile Changing Lives </h1>
-       <div class="width-600" >
-        
-<p-carousel [value]="products" [numVisible]="1" [numScroll]="1" [circular]="false" [responsiveOptions]="responsiveOptions">
-    <ng-template let-product #item>
-        <p-imagecompare class="shadow-lg rounded-2xl h-50">
-            <ng-template #left>
-                <img [src]="product.url" width="100px" />
-            </ng-template>
-            <ng-template #right>    
-                <img [src]="product.url2" width="100px" />
-            </ng-template>
-         
-        </p-imagecompare>
-    
-    </ng-template>
+        <div class="bg-padd"></div>
+        <h1 class=" fw-bold text-center mb-0 mt-5 fs-100 case_text">CASE STUDY </h1>
+        <div class="row justify-content-center d-flex"> 
 
-</p-carousel>
-       </div>
+           
+            <div class="col-6">
+                <p-carousel [value]="products" [numVisible]="1" [numScroll]="1"  >
+                    <ng-template let-product #item>
+                        <div class="d-flex justify-content-center gap-5">
+                            <div class="p-2 before_card">
+                                <img src="./before.jpeg" class="case_img" />
+                                
+                                    <h1 class="fw-bold text-center mt-2">BEFORE</h1>
+                                
+                            </div>
+                            <div class="p-2 before_card">
+                                <img src="./after.jpeg" class="case_img" />
+                                
+                                    <h1 class="fw-bold text-center mt-2">AFTER</h1>
+                                
+                            </div>
+        
+                        </div>
+        
+                        <p class="mt-5 text-center w-50 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, modi? Est atque libero distinctio sed, cupiditate ratione temporibus, laborum dolorum impedit vitae porro repudiandae qui blanditiis molestiae eaque! Veritatis, voluptates.
+                        </p>
+                    </ng-template>
+                </p-carousel>
+            </div>
+
+
+
+        </div>
+      
+        <div class="col-6">
+            <div class="width-600" >
+    
+                <!-- <p-carousel [value]="products" [numVisible]="1" [numScroll]="1" [circular]="false" [responsiveOptions]="responsiveOptions">
+                    <ng-template let-product #item>
+                        <p-imagecompare class="shadow-lg rounded-2xl h-50">
+                            <ng-template #left>
+                                <img [src]="product.url" width="100px" />
+                            </ng-template>
+                            <ng-template #right>    
+                                <img [src]="product.url2" width="100px" />
+                            </ng-template>
+                         
+                        </p-imagecompare>
+                    
+                    </ng-template>
+                
+                </p-carousel> -->
+             
+                       </div>
+        </div>
       
     </div>
 
     <!-- <app-homepage-service></app-homepage-service> -->
+    <app-homepage-service></app-homepage-service>
     <app-appointment></app-appointment>
     <app-footer></app-footer>
    

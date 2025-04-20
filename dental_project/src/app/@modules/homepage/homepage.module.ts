@@ -12,6 +12,8 @@ import { HomepageTestimonialComponent } from '../../components/homepage/homepage
 import { FooterComponent } from '../../components/footer/footer.component';
 import { AppointmentComponent } from '../../components/appointment/appointment.component';
 import { WappComponent } from '../../components/wapp/wapp.component';
+import { StatsComponent } from '../../components/homepage/stats/stats.component';
+import { ExtraComponent } from '../../components/homepage/extra/extra.component';
 
 const routes: Routes = [
   {
@@ -22,7 +24,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomepageComponent,MainContentComponent,SectionOneComponent,HomepageServiceComponent,HomepageTestimonialComponent,],
+  declarations: [HomepageComponent,MainContentComponent,SectionOneComponent,HomepageTestimonialComponent,],
   imports: [
     CommonModule,
     ThemeModuleModule,
@@ -30,7 +32,10 @@ const routes: Routes = [
    HeaderComponent,
    AppointmentComponent,
    FooterComponent,
-   WappComponent
+   StatsComponent,
+   ExtraComponent,
+   WappComponent,
+   HomepageServiceComponent
     
   ]
 })

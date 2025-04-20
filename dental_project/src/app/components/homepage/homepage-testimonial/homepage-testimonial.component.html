@@ -1,24 +1,26 @@
-
-<div class=" text-center mt-5">
-    <h2 class="sec-title log position-relative">What our great customers say about Dr. Santhosh Kumar
-        <span class="blur-bg in-img top-0 start-0 "> a</span>
-    </h2>
-    <div class="row">
-        <div class="col-6 pad-t">
-            <p-carousel [value]="products" [numVisible]="1" [numScroll]="7"  >
-                <ng-template let-product #item>
-                    <div class="border border-surface rounded-border m-2 p-4 bg-white">
-                        <img src="./comma.png" alt="" width="70" class="pb-4" />
-                        <p>"he left the army with a glowing testimonial from his commanding officer,they presented him with a small testimonial in recognition of his service"</p>
-                        <img src="./test_1.jpeg" alt="" class="rounded-circle" width="70" height="80" />
-                    </div>
-                </ng-template>
-            </p-carousel>
+<div class=" bg-padd">
+    <div class=" text-center mt-5">
+        <h2 class="sec-title log position-relative">What our great customers say about Dr. Santhosh Kumar
+            <span class="blur-bg in-img top-0 start-0 "> a</span>
+        </h2>
+        <div class="row">
+            <div class="col-6 pad-t">
+                <p-carousel [value]="products" [numVisible]="1" [numScroll]="1"  >
+                    <ng-template let-product #item>
+                        <div class="border border-surface rounded-border m-2 p-4 bg-white">
+                            <img src="./comma.png" alt="" width="70" class="pb-4" />
+                            <p>"he left the army with a glowing testimonial from his commanding officer,they presented him with a small testimonial in recognition of his service"</p>
+                            <img src="./test_1.jpeg" alt="" class="rounded-circle" width="70" height="80" />
+                        </div>
+                    </ng-template>
+                </p-carousel>
+            </div>
+            <div class="col-6">
+                <img src="./testi.png" alt="" width="700" />
+            </div>
         </div>
-        <div class="col-6">
-            <img src="./testi.png" alt="" width="700" />
-        </div>
+        
     </div>
-    
 </div>
+
 

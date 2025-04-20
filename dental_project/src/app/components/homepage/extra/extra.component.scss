@@ -1,0 +1,52 @@
+
+.heading-1{
+    font-size: 8rem;
+    line-height: 1.1;
+}
+  
+.icon-list-numbers {
+    max-width: 608px;
+    margin-left: auto;
+}
+
+.number-list {
+    margin-bottom: 3.6rem;
+}
+
+.number {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+    margin-right: 48px;
+}
+
+.number img {
+    position: absolute;
+    max-width: 55px;
+    max-height: 48px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.number-list-conetnt {
+    width: calc(100% - 128px);
+}
+
+.flex-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}

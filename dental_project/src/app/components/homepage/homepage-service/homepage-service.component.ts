@@ -1,8 +1,10 @@
 import { Component,OnInit } from '@angular/core';
+import { ThemeModuleModule } from '../../../@modules/theme-module/theme-module.module';
 
 @Component({
   selector: 'app-homepage-service',
- standalone:false,
+ standalone:true,
+ imports:[ThemeModuleModule],
   templateUrl: './homepage-service.component.html',
   styleUrl: './homepage-service.component.scss'
 })

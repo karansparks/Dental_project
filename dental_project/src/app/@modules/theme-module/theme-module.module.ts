@@ -14,6 +14,9 @@ import { AccordionModule } from 'primeng/accordion';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 import { ImageCompareModule } from 'primeng/imagecompare';
 import { AnimateOnScroll } from 'primeng/animateonscroll';
+import { BadgeModule } from 'primeng/badge';
+import { OverlayBadgeModule } from 'primeng/overlaybadge';
+
 @NgModule({
   declarations: [],
   imports: [
@@ -29,8 +32,10 @@ import { AnimateOnScroll } from 'primeng/animateonscroll';
     AccordionModule,
     AvatarGroupModule,
     ImageCompareModule,
-    AnimateOnScroll
+    AnimateOnScroll,BadgeModule,
+    OverlayBadgeModule
   ],
-  exports: [ButtonModule,ImageModule,ImageCompareModule,MenubarModule,ListboxModule,CarouselModule,Tag,CardModule,InputTextModule,FluidModule,AvatarModule,AccordionModule,AvatarGroupModule,AnimateOnScroll]
+  exports: [ButtonModule,ImageModule,BadgeModule,
+    OverlayBadgeModule,ImageCompareModule,MenubarModule,ListboxModule,CarouselModule,Tag,CardModule,InputTextModule,FluidModule,AvatarModule,AccordionModule,AvatarGroupModule,AnimateOnScroll]
 })
 export class ThemeModuleModule { }
