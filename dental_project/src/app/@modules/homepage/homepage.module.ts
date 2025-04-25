@@ -14,6 +14,8 @@ import { AppointmentComponent } from '../../components/appointment/appointment.c
 import { WappComponent } from '../../components/wapp/wapp.component';
 import { StatsComponent } from '../../components/homepage/stats/stats.component';
 import { ExtraComponent } from '../../components/homepage/extra/extra.component';
+import { CollapsibleChatComponent } from '../../components/collapsible-chat/collapsible-chat.component';
+import { ChatComponent } from '../../components/chat/chat.component';
 
 const routes: Routes = [
   {
@@ -35,7 +37,9 @@ const routes: Routes = [
    StatsComponent,
    ExtraComponent,
    WappComponent,
-   HomepageServiceComponent
+   HomepageServiceComponent,
+   CollapsibleChatComponent,
+   ChatComponent
     
   ]
 })

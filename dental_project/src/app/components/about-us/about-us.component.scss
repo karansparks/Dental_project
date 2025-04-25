@@ -54,7 +54,7 @@ $font-size-medium: 5rem;
 }
 
 .fs-100{
-    font-size:60px;
+    font-size:40px;
 }
 
 .before_card{
@@ -70,6 +70,27 @@ $font-size-medium: 5rem;
 }
 
 .case_text{
-    font-size:10rem;
+    font-size:4rem;
+    margin-bottom:26px;
     font-weight: bolder;
+}
+.product-description {
+    font-weight: bold;
+    font-size: 1.2rem; /* Makes the text a little larger */
+    color: #2c3e50; /* Dark color for contrast */
+    text-transform: uppercase; /* Makes the text uppercase for emphasis */
+    letter-spacing: 1px; /* Adds a bit of space between letters */
+    background-color: #f7f7f7; /* Light background to make it stand out */
+    padding: 10px; /* Adds some padding around the text */
+    border-radius: 5px; /* Rounded corners for the background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+.text-description {
+    color: #4A4A4A; /* Soft gray text color */
+    font-size: 1.125rem; /* Slightly larger font size for readability */
+    margin-top: 1rem; /* Space above the paragraph */
+    margin-bottom: 1rem; /* Space below the paragraph */
+    line-height: 1.6; /* Makes the text more readable with better line spacing */
+    letter-spacing: 0.5px; /* Adds slight spacing between letters for clarity */
+    font-family: Arial, sans-serif; /* Modern and clean font family */
 }

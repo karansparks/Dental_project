@@ -20,23 +20,27 @@ export class AboutUsComponent implements  AfterViewInit{
     
     {
 url:'./before.jpeg',
-url2:'./after.jpeg'
+url2:'./after.jpeg',
+description:'I Recently Had The Pleasure Of Undergoing Denture Treatment At Zen Smile Dental Studio And The Experience Was Beyond Exceptional Dr K Santhosh Kumare And His Team Delivered Perfectly Crafted Dentures That Have Restored Both My Smile And Confidence From The Very Beginning I Was Impressed By The Personalized Care And Attention To Detail The Treatment Was Thorough And Dr Santhosh Ensured That I Was Comfortable Every Step Of The Way I Was Guided Through The Process And My Questions Were Answered With Patience And Professionalism.'
 
 },
 
 {
 url:'./about_us.jpeg',
-url2:'./bf3.jpeg'     
+url2:'./bf3.jpeg',
+description:'Canine Space Infections Are Typically Caused By An Abscess Or Bacterial Infection That Affects The Tissues Surrounding The Canine Teeth (The Pointed Teeth Located Between The Incisors And Premolars) This Type Of Infection Can Be Painful Causing Swelling Discomfort And Difficulty With Chewing Or Swallowing If Left Untreated It Can Lead To Further Complications Such As Tooth Loss Or The Spread Of Infection To Other Areas Of The Face Or Jaw'    
 },
 
 {
-url:'./before.jpeg',
-url2:'./after.jpeg'
+url:'./BF2.jpg',
+url2:'./BF2.1.jpg',
+description:'A Submandibular Space Infection Refers To An Infection That Occurs In The Submandibular Space Which Is Located Beneath The Jaw This Infection Can Result From Conditions Like Dental Abscesses Salivary Gland Infections Or Trauma To The Area The Infection Often Causes Swelling And Pain In The Lower Jaw And Can Sometimes Spread To Other Areas Causing More Severe Complications'
 },
 
 {
- url:'./before.jpeg',
- url2:'./after.jpeg'
+ url:'./BF3.jpg',
+ url2:'./BF3.1.jpg',
+ description:'Dental Fillings Are One Of The Most Common Treatments Used To Repair Teeth Affected By Decay Cavities Or Damage The Procedure Involves Cleaning Out The Decayed Or Damaged Portion Of The Tooth And Then Filling It With A Suitable Material To Restore The Tooth’s Function Structure And Appearance'
 }
 
 ];
@@ -49,7 +53,7 @@ url2:'./after.jpeg'
 counterObj = { val: 0 };
 displayValue1 = '1000';
 displayValue2 = '500';
-displayValue3 = '200';
+displayValue3 = '100';
 
 words = ['I am a Dentitst Doctor,what i can do for you?']
   responsiveOptions: any[] | undefined;

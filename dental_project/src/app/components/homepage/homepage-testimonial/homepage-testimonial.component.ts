@@ -16,8 +16,8 @@ export class HomepageTestimonialComponent {
       this.products = [{
         id: '1000',
         code: 'f230fh0g3',
-        name: 'Bamboo Watch',
-        description: 'Product Description',
+        name: './test_1.jpeg',
+        description: 'Dr. K. Santhosh Kumare is not only highly skilled but also incredibly kind and patient. He explained the entire procedure clearly, which helped me feel relaxed and confident throughout the treatment.',
         image: 'bamboo-watch.jpg',
         price: 65,
         category: 'Accessories',
@@ -28,8 +28,8 @@ export class HomepageTestimonialComponent {
     {
       id: '1000',
       code: 'f230fh0g3',
-      name: 'Bamboo Watch',
-      description: 'Product Description',
+      name: './test_2.jpeg',
+      description: 'What truly stood out was the personalized care and attention to detail. Dr. Santhosh made sure I was comfortable at every step, and the results of the treatment were fantastic.',
       image: 'bamboo-watch.jpg',
       price: 65,
       category: 'Accessories',
@@ -39,8 +39,8 @@ export class HomepageTestimonialComponent {
   },{
     id: '1000',
     code: 'f230fh0g3',
-    name: 'Bamboo Watch',
-    description: 'Product Description',
+    name: './test_3.jpeg',
+    description: 'By: A Happy Patient of Dr. K. Santhosh Kumar From the moment I stepped into Zen Smile Dental Studio, I knew I was in good hands. The atmosphere was warm, welcoming, and immaculately clean—setting the tone for what turned out to be one of the best dental visits I’ve ever had.',
     image: 'bamboo-watch.jpg',
     price: 65,
     category: 'Accessories',
@@ -50,8 +50,8 @@ export class HomepageTestimonialComponent {
 },{
   id: '1000',
   code: 'f230fh0g3',
-  name: 'Bamboo Watch',
-  description: 'Product Description',
+  name: './test_3.jpeg',
+  description: 'Dr. K. Santhosh Kumare is not just a dentist—he’s an artist in his craft. His calm demeanor, deep knowledge, and attention to every tiny detail made me feel completely at ease. He explained the procedure clearly, listened to my concerns patiently, and ensured I was comfortable throughout. I could truly feel that he cared about my smile as much as I did!',
   image: 'bamboo-watch.jpg',
   price: 65,
   category: 'Accessories',

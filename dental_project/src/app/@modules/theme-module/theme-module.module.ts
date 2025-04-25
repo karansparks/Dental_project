@@ -16,7 +16,13 @@ import { ImageCompareModule } from 'primeng/imagecompare';
 import { AnimateOnScroll } from 'primeng/animateonscroll';
 import { BadgeModule } from 'primeng/badge';
 import { OverlayBadgeModule } from 'primeng/overlaybadge';
-
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {ClipboardModule} from '@angular/cdk/clipboard';
+import { ToastModule } from 'primeng/toast';
 @NgModule({
   declarations: [],
   imports: [
@@ -33,9 +39,24 @@ import { OverlayBadgeModule } from 'primeng/overlaybadge';
     AvatarGroupModule,
     ImageCompareModule,
     AnimateOnScroll,BadgeModule,
-    OverlayBadgeModule
+    OverlayBadgeModule,
+    MatButtonModule,
+    MatCardModule,
+    MatInputModule,
+    MatIconModule,
+    MatButtonToggleModule,
+    ClipboardModule,
+    ToastModule
   ],
   exports: [ButtonModule,ImageModule,BadgeModule,
+    MatButtonModule,
+    MatCardModule,
+    MatInputModule,
+    MatIconModule,
+    CommonModule,
+    MatButtonToggleModule,
+    ClipboardModule,
+    ToastModule,
     OverlayBadgeModule,ImageCompareModule,MenubarModule,ListboxModule,CarouselModule,Tag,CardModule,InputTextModule,FluidModule,AvatarModule,AccordionModule,AvatarGroupModule,AnimateOnScroll]
 })
 export class ThemeModuleModule { }

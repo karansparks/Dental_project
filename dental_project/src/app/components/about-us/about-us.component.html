@@ -44,18 +44,20 @@
             </div>
         </div>
 
-        <div class="col-5 backg-green pt-4 ps-3">
+        <div class="col-5 backg-green pt-4 ps-3 text-description">
             <h6 class="fw-bold text-success ">About Our Doctor</h6>
             <h1 class="fw-bold text-uppercase">Crafting Confident Smiles with Care</h1>
             <p class="text-gray-700 mb-4 fs-5 mt-3">
-                Dr. [Your Name] is a passionate and experienced dental professional who combines cutting-edge techniques
-                with compassionate care. With a focus on patient comfort and long-lasting results, Dr. [Your Name] has transformed
-                hundreds of smiles and continues to raise the standard in dental excellence.
+                Dr K Santhosh Kumare Is A Highly Skilled And Passionate Dental Professional Dedicated To Delivering Exceptional Care Through A Blend Of Advanced Clinical Expertise And A Patient-Centric Approach. With Years Of Experience In Modern Dentistry Dr Santhosh Kumare Is Known For Integrating Cutting-Edge Techniques With Gentle Personalized Treatment Plans Ensuring Both Comfort And Outstanding Results For Every Patient.
+
+                Throughout His Career He Has Successfully Transformed Hundreds Of Smiles Earning A Reputation For Precision Empathy And Excellence. His Commitment To Continuing Education And Adoption Of The Latest Dental Technologies Allows Him To Provide Treatments That Are Not Only Effective But Also Minimally Invasive And Aesthetically Pleasing.
+                
+                Dr Santhosh Believes That A Healthy Confident Smile Can Change Lives And He Strives Every Day To Make That A Reality For His Patients. Whether It’s Routine Dental Care Orthodontic Solutions Like Braces Or Complex Smile Makeovers He Is Dedicated To Raising The Standard Of Dental Care And Creating A Positive Stress-Free Experience For Everyone Who Walks Through The Doors Of Zen Smile Dental Studio.
               </p>
-              <span><i class="fa-solid fa-tooth text-success fs-4 mb-2"></i> Personalized Treatments</span> <br>
-              <span><i class="fa-solid fa-tooth text-success fs-4 mb-2"></i> Modern Equipment</span> <br>
-              <span><i class="fa-solid fa-tooth text-success fs-4 mb-2"></i> Gentle & Friendly Approach</span> <br>
-              <span><i class="fa-solid fa-tooth text-success fs-4"></i> Preventive Dental Care</span> 
+              <span><i class="fa-solid fa-tooth text-success fs-4 mb-2"></i> PERSONALIZED TREATMENTS</span> <br>
+              <span><i class="fa-solid fa-tooth text-success fs-4 mb-2"></i> MODERN EQUIPMENT</span> <br>
+              <span><i class="fa-solid fa-tooth text-success fs-4 mb-2"></i>  GENTLE & FRIENDLY APPROACH</span> <br>
+              <span><i class="fa-solid fa-tooth text-success fs-4"></i>  PREVENTIVE DENTAL CARE</span> 
 
 
                 <div class="mt-5 d-flex justify-content-start  row">
@@ -63,20 +65,20 @@
                        <div class="mb-0 fw-bold fs-100 fs-1 ">
                         <h1 class="mb-0 fw-bold fs-100 d-inline-block " #counter>{{displayValue1}}</h1> +
                        </div>
-                        <p >Patients</p>
+                        <p >PATIENTS</p>
                     </div>
 
                     <div class="col-4">
                         <div class="mb-0 fw-bold fs-100 fs-1 ">
                             <h1 class="mb-0 fw-bold fs-100 d-inline-block " #experience>{{displayValue2}}</h1> +
                            </div>
-                        <p >Patients</p>
+                        <p >CONSULATIONS</p>
                     </div>
                     <div class="col-4">
                         <div class="mb-0 fw-bold fs-100 fs-1 ">
-                            <h1 class="mb-0 fw-bold fs-100 d-inline-block " #patient>{{displayValue3}}</h1> +
+                            <h1 class="mb-0 fw-bold fs-100 d-inline-block " #patient>{{displayValue3}}</h1> %
                            </div>
-                        <p >Patients</p>
+                        <p >SUCCESS RATE</p>
                     </div>
                    
                 </div>
@@ -169,7 +171,7 @@
             </ng-template>
         </p-carousel> -->
         <div class="bg-padd"></div>
-        <h1 class=" fw-bold text-center mb-0 mt-5 fs-100 case_text">CASE STUDY </h1>
+        <h1 class=" fw-bold text-center  mt-5 fs-100 case_text">FEEL THE RELIEF LOVE THE RESULT </h1>
         <div class="row justify-content-center d-flex"> 
 
            
@@ -178,13 +180,13 @@
                     <ng-template let-product #item>
                         <div class="d-flex justify-content-center gap-5">
                             <div class="p-2 before_card">
-                                <img src="./before.jpeg" class="case_img" />
+                                <img [src]="product.url" class="case_img" />
                                 
                                     <h1 class="fw-bold text-center mt-2">BEFORE</h1>
                                 
                             </div>
                             <div class="p-2 before_card">
-                                <img src="./after.jpeg" class="case_img" />
+                                <img [src]="product.url2" class="case_img" />
                                 
                                     <h1 class="fw-bold text-center mt-2">AFTER</h1>
                                 
@@ -192,7 +194,7 @@
         
                         </div>
         
-                        <p class="mt-5 text-center w-50 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, modi? Est atque libero distinctio sed, cupiditate ratione temporibus, laborum dolorum impedit vitae porro repudiandae qui blanditiis molestiae eaque! Veritatis, voluptates.
+                        <p class= "mt-5  text-center w-50 mx-auto product-description">{{product.description}}
                         </p>
                     </ng-template>
                 </p-carousel>

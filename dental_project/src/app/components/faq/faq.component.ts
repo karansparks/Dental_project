@@ -13,10 +13,14 @@ export class FaqComponent {
   tabs = [
     {
       id:1,
-      faq:[ { question: 'Is there any special offer on Invisalign?', answer: 'Yes! We occasionally provide promotional offers or special discounts based on the season or events. Contact us to learn about any current deals.', value: '0' },
-        { question: 'How long will it take for my teeth to get straighter?', answer: 'The treatment duration depends on the complexity of your case. Some patients see results in just a few months, while others may take up to 18 months. During your consultation, we will provide a personalized timeline.', value: '1' },
-        { question: 'How long do I have to wear my clear aligners?', answer: 'For optimal results, wear your aligners for 20 to 22 hours per day. You should only remove them when eating, drinking (except water), brushing, or flossing.', value: '2' }]
-    },
+      faq:[ { question: 'How long will I need to wear Braces?', answer: 'It depends on the complexity of your case. On average, braces are worn for 12 to 24 months, but some may need them for a shorter or longer time.', value: '0' },
+        { question: ' Do braces hurt?', answer: ' You may feel mild discomfort or soreness after braces are first applied or adjusted. This is normal and usually goes away in a few days. Over-the-counter pain relievers and soft foods can help.', value: '1' },
+        { question: 'Can I eat normally with Braces?', answer: 'You can eat most foods, but you should avoid hard, sticky, or chewy foods like popcorn, chewing gum, and hard candies. These can damage brackets or wires.', value: '2' },
+        { question: 'Will I need to wear retainers after Braces?', answer: 'Yes! Retainers are essential to maintain your new smile. Teeth can shift back without them, so your orthodontist will recommend wearing them for a specific time after your braces are removed.', value: '3' },
+        { question: 'How do I clean my teeth with Braces on?', answer: 'Proper oral hygiene is a must. Brush after every meal, floss daily using special flossers or a water flosser, and use orthodontic brushes to clean around brackets and wires.', value: '4' },
+
+      ]
+      },
     {
       id: 2,
       faq: [

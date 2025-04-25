@@ -16,15 +16,15 @@ export class HomepageServiceComponent implements OnInit {
   responsiveOptions: any[] | undefined;
 
   services: any[] = [
-    {url:'./services_logo/braces_log.png',name:'Dental Care'},
-    {url:'./services_logo/dentures.png',name:'dentures'},
-    {url:'./services_logo/infection.png',name:'Infectin control'},
-    {url:'./services_logo/whitening.png',name:'whitening'},
-    {url:'./services_logo/root_canal.png',name:'root_canal'},
-    {url:'./services_logo/dental-implant.png',name:'dental-implant'},
-    {url:'./services_logo/removal.png',name:'removal'},
-    {url:'./services_logo/kids.png',name:'kids'},
-    {url:'./services_logo/clear.png',name:'Clear Aligner'}]
+    {url:'./services_logo/braces_log.png',name:'BRACES'},
+    {url:'./services_logo/dentures.png',name:'DENTURE'},
+    {url:'./services_logo/infection.png',name:'INFECTION CONTROL'},
+    {url:'./services_logo/whitening.png',name:'WHITENING'},
+    {url:'./services_logo/root_canal.png',name:'ROOT CANAL'},
+    {url:'./services_logo/dental-implant.png',name:'DENTAL IMPLANT'},
+    {url:'./services_logo/removal.png',name:'REMOVAL'},
+    {url:'./services_logo/kids.png',name:'KIDS DENTISTRY'},
+    {url:'./services_logo/clear.png',name:'CLEAR ALIGNER'}]
   
   constructor() {}
 

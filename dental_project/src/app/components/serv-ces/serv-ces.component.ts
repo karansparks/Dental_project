@@ -19,9 +19,9 @@ export class ServCesComponent implements OnInit {
   constructor() {}
   serviceDatas= signal<any[]>([{
     id: 1,
-    title: 'Braces',
-    imgUrl: './doc_cartoon.png',
-    imgUrl1: '',
+    title: 'BRACES ORTHODONTICS',
+    imgUrl: './b2.jpg',
+    imgUrl1: './b2.1.jpg',
     style: 'width: 50%; height: auto;',
     description: [
         'Brace yourself for a whole new world of straight teeth and dazzling smiles with Braces Orthodontics. We’ll take you on a journey of smiles with our colourful braces, clear aligners, and cutting-edge technology. Get ready to grin from ear to ear! Our team of experienced and dedicated orthodontists are committed to providing you with the highest level of service and care. We understand that every patient is unique, and we’ll work with you to create a personalized treatment plan that’s tailored to your specific needs and goals.',
@@ -44,9 +44,9 @@ export class ServCesComponent implements OnInit {
 },
 {
   id: 2,
-  title: 'Dentures',
-  imgUrl: './doctor.jpeg',
-  imgUrl1: '',
+  title: 'DENTURES',
+  imgUrl: './d2.jpg',
+  imgUrl1: './denture.webp',
   style: 'width: 50%; height: auto;',
   description: [
     'Let us help you say goodbye to ill-fitting, uncomfortable dentures and hello to a new, confident smile. We’ll make sure your dentures fit like a glove, and you’ll be able to enjoy all your favorite foods again in no time! At our clinic, our team of experts will work with you every step of the way to ensure your dentures are customized to your unique needs and preferences. From tooth color to shape, we’ll make sure your new dentures look and feel like your natural teeth.',
@@ -65,9 +65,9 @@ export class ServCesComponent implements OnInit {
 }
 ,{
   id: 3,
-  title: 'Clear Aligner',
-  imgUrl: './doctor.jpeg',
-  imgUrl1: '',
+  title: 'CLEAR ALIGNER',
+  imgUrl: './ca2.jpg',
+  imgUrl1: './ca1.jpg',
   style: 'width: 50%; height: auto;',
   description: [
     'Say goodbye to metal mouth and hello to a discreet new you with Invisalign, the clear choice for a straighter smile. The aligners are made of a comfortable, clear plastic material that is virtually invisible when worn. The aligners are removable, which makes it easy to eat, brush and floss your teeth as you normally would, and they are specifically designed to apply the right amount of force to the right teeth at the right time to achieve desired results.',
@@ -86,9 +86,9 @@ export class ServCesComponent implements OnInit {
 }
 ,{
   id: 4,
-  title: 'Root Canal Therapy',
-  imgUrl: './doctor.jpeg',
-  imgUrl1: '',
+  title: 'ROOT CANAL THERAPY',
+  imgUrl: './root1.jpg',
+  imgUrl1: './rootpatient.jpg',
   style: 'width: 50%; height: auto;',
   description: [
     'Don’t let a painful tooth ruin your day, let our Root Canal Therapy service save the day! Our team of experts will make sure your root canal therapy is as painless as possible and have you back to your normal routine in no time. At our clinic, we use the latest technology and techniques to ensure that your root canal therapy is comfortable and efficient. Don’t let a bad tooth bring you down, let us root out the problem and have you smiling again in no time.',
@@ -107,8 +107,8 @@ export class ServCesComponent implements OnInit {
 ,
 {
   id: 5,
-  title: 'Dental Implants',
-  imgUrl: './services/dental_implants.jpeg',
+  title: 'DENTAL IMPLANTS',
+  imgUrl: './dental.jpg',
   imgUrl1: './services/dental_implants.jpeg',
   style: 'width: 50%; height: auto;',
   description: [
@@ -154,9 +154,9 @@ export class ServCesComponent implements OnInit {
 
 ,{
   id: 6,
-  title: 'Infection Control',
-  imgUrl: './doctor.jpeg',
-  imgUrl1: '',
+  title: 'INFECTION CONTROL',
+  imgUrl: './infection.jpg',
+  imgUrl1: './infectioncontrol.jpg',
   style: 'width: 50%; height: auto;',
   description: [
     "Don’t let germs and bacteria dull your shine, let our Dental Infection Control service keep your smile sparkling! Our team of experts will make sure your dental environment is as clean and safe as possible, so you can relax and smile with confidence. Infection control is of the utmost importance at our dental center. We use disposable supplies and instruments that are not reused, and all other instruments are made of stainless steel or plastic that can withstand extreme heat and pressure in an autoclave sterilizer. All surfaces are cleaned and disinfected between appointments to prevent the spread of disease and cross-contamination.",
@@ -180,9 +180,9 @@ export class ServCesComponent implements OnInit {
   ]
 },{
   id: 7,
-  title: 'Gum Therapy',
-  imgUrl: './doctor.jpeg',
-  imgUrl1: '',
+  title: 'GUM THERAPY',
+  imgUrl: './gum.jpg',
+  imgUrl1: './gum1.jpg',
   style: 'width: 50%; height: auto;',
   description: [
     "Gum up the works no more! Allow our Gum Therapy service to provide you with a healthy smile that will help your gums smile as well. Our professionals will collaborate with you to keep your gums healthy and robust so that your smile may shine brightly.",
@@ -201,9 +201,9 @@ export class ServCesComponent implements OnInit {
 }
 ,{
   id: 8,
-  title: 'Teeth Whitening',
-  imgUrl: './doctor.jpeg',
-  imgUrl1: '',
+  title: 'TEETH WHITENING',
+  imgUrl: './white.jpg',
+  imgUrl1: './white1.jpg',
   style: 'width: 50%; height: auto;',
   description: [
     "Get ready to dazzle with our Teeth Whitening service. We’ll make sure your pearly whites are brighter than ever before. From in-office treatments to take-home kits, we’ll give you a smile that will light up any room. No more hiding your smile, let our Teeth Whitening service give you the confidence to show off your dazzling grin. Whether you want a subtle touch-up or a dramatic change, we’ve got you covered.",
@@ -219,9 +219,9 @@ export class ServCesComponent implements OnInit {
   ]
 },{
   id: 9,
-  title: 'Extraction & Wisdom Teeth Removal',
-  imgUrl: './doctor.jpeg',
-  imgUrl1: '',
+  title: 'EXTRACTION & WISDOM TEETH REMOVAL',
+  imgUrl: './extraction.jpg',
+  imgUrl1: 'extraction1.jpg',
   style: 'width: 50%; height: auto;',
   description: [
     "Don’t let your wisdom teeth or teeth concerns obstruct your smile; Instead, let our extraction & wisdom teeth removal service help you. With our cutting-edge equipment and techniques, we’ll make the procedure as painless as possible and have you back to your daily routine in no time.",
@@ -239,9 +239,9 @@ export class ServCesComponent implements OnInit {
   ]
 },{
   id: 10,
-  title: 'Kids Dentistry',
-  imgUrl: './doctor.jpeg',
-  imgUrl1: '',
+  title: 'KIDS DENTISTRY',
+  imgUrl: './kid1.webp',
+  imgUrl1: './kid.jpg',
   style: 'width: 50%; height: auto;',
   description: [
     "Welcome to the world of kids dentistry where we turn dental visits into fun adventures! From glittery toothbrushes to colorful braces, we’ll make sure your little one’s smile sparkles brighter than ever before.",

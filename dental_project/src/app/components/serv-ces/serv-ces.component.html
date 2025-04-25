@@ -14,7 +14,7 @@
             <div class="col-6">
                 @for (item of loopData(); track item.id) {
                     <h2 class="f-3rem">About <span class="text-success">{{item.title}}</span></h2>
-                    <p class="lineHt-30">{{item.description[0]}}</p>
+                    <p class="lineHt-30 mt-3">{{item.description[0]}}</p>
                     @if(item.description.length > 1){   
                         <p class="lineHt-30">{{item.description[1]}}</p>
                     }
@@ -37,6 +37,10 @@
                     <p class="lineHt-30">{{item.description1[0]}}</p>
                     @if(item.description1.length > 1){   
                         <p class="lineHt-30">{{item.description1[1]}}</p>
+                        <p class="lineHt-30">{{item.description1[2]}}</p>
+                        <p class="lineHt-30">{{item.description1[3]}}</p>
+                        <p class="lineHt-30">{{item.description1[4]}}</p>
+                        <p class="lineHt-30">{{item.description1[5]}}</p>
                     }
                   }
             </div>
