@@ -30,7 +30,7 @@ export class AppointmentComponent implements OnInit {
   }
 
   showBottomRight() {
-    this.messageService.add({ severity: 'success', summary: 'Success Message', detail: 'Message Content', key: 'br', life: 3000 });
+    this.messageService.add({ severity: 'success', summary: 'Success Message', detail: 'Data Saved Successfully', key: 'br', life: 3000 });
 }
   ngOnInit(): void {
     // Initialization logic can go here
