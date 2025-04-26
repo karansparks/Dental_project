@@ -23,6 +23,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {ClipboardModule} from '@angular/cdk/clipboard';
 import { ToastModule } from 'primeng/toast';
+import { ScrollTopModule } from 'primeng/scrolltop';
 @NgModule({
   declarations: [],
   imports: [
@@ -46,6 +47,7 @@ import { ToastModule } from 'primeng/toast';
     MatIconModule,
     MatButtonToggleModule,
     ClipboardModule,
+    ScrollTopModule,
     ToastModule
   ],
   exports: [ButtonModule,ImageModule,BadgeModule,
@@ -57,6 +59,7 @@ import { ToastModule } from 'primeng/toast';
     MatButtonToggleModule,
     ClipboardModule,
     ToastModule,
+    ScrollTopModule,
     OverlayBadgeModule,ImageCompareModule,MenubarModule,ListboxModule,CarouselModule,Tag,CardModule,InputTextModule,FluidModule,AvatarModule,AccordionModule,AvatarGroupModule,AnimateOnScroll]
 })
 export class ThemeModuleModule { }

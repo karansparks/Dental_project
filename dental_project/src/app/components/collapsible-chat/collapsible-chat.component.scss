@@ -3,10 +3,14 @@
 .chat-button {
     display: flex;
     align-items: center;
+    bottom: 60px;
     justify-content: center;
     position: fixed !important;
-    bottom: 5%;
-    right: 3%;
+    bottom: 12%;
+    right: 15px;
+    background: #000000;
+    border-radius: 50%;
+
     // background-color: $black;
 
     .button-icon {
