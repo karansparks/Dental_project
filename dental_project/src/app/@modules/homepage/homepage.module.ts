@@ -16,6 +16,7 @@ import { StatsComponent } from '../../components/homepage/stats/stats.component'
 import { ExtraComponent } from '../../components/homepage/extra/extra.component';
 import { CollapsibleChatComponent } from '../../components/collapsible-chat/collapsible-chat.component';
 import { ChatComponent } from '../../components/chat/chat.component';
+import { ThankScreenComponent } from '../../components/appointment/thank-screen/thank-screen.component';
 
 const routes: Routes = [
   {
@@ -39,7 +40,8 @@ const routes: Routes = [
    WappComponent,
    HomepageServiceComponent,
    CollapsibleChatComponent,
-   ChatComponent
+   ChatComponent,
+   ThankScreenComponent
     
   ]
 })

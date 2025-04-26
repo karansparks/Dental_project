@@ -4,10 +4,11 @@ import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { AppointmentService } from '../../services/appointment/appointment.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MessageService } from 'primeng/api';
+import { ThankScreenComponent } from './thank-screen/thank-screen.component';
 @Component({
   selector: 'app-appointment',
  standalone:true,
-   imports:[ThemeModuleModule,ReactiveFormsModule  ],
+   imports:[ThemeModuleModule,ReactiveFormsModule,ThankScreenComponent],
   templateUrl: './appointment.component.html',
   styleUrl: './appointment.component.scss',
   providers: [MessageService]
@@ -36,17 +37,29 @@ export class AppointmentComponent implements OnInit {
     // Initialization logic can go here
   }
 
+
+  viewThankYou:boolean = false;
   onSubmit() {
     if (this.userForm.valid) {
       console.log(this.userForm.value);
       this.apiservice.addUser(this.userForm.value).subscribe({
         next: res => {
           console.log('User saved', res)
+          this.viewThankYou = true;
           this.showBottomRight();
           this.userForm.reset(); // Reset the form after successful submission
         } ,
         error: err => console.error('Error', err)
       });
+    }
+  }
+
+  messageFromChild = "";
+
+  receiveFromChild(message: string) {
+    this.messageFromChild = message;
+    if(message === 'home') {
+      this.viewThankYou = false; // Hide the thank you screen when navigating back to home
     }
   }
 
