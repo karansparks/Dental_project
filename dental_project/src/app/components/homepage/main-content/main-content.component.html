@@ -1,6 +1,6 @@
-<div class="bg-green-light">
+<div class="bg-green-light"  #animateSection>
     <div class="wrapper ">
-        <div class=" position-relative">
+        <div class=" position-relative" #animateItem>
             <div class="lefttext d-flex flex-column justify-content-center" >
                 <!-- <h5>WELCOME TO ZEN DENTAL CLINIC</h5> -->
                 <h1 class="log">
@@ -10,10 +10,9 @@
                     <p class="mb-0">At Zen Dental We Combine The Resources Of The Greatest Dentists In Town With The Most Cutting Edge Technology To Provide You With The Highest Quality Results</p>
                     <p class="mb-0">We Seek To Instill Confidence Happiness And Optimism In Our Patients Better Teeth Better Health</p>
                 </div>
-              
-          <p-button label="Book Appointment"  />
+          <p-button label="Book Appointment" (click)="scrollToAppointment()" #animateItem  />
             </div>
-            <div class="imgs">
+            <div class="imgs" #animateItem>
                 <p-image src="./smiles.png" alt="Image" width="800" height="800" class="" />
                  <div class="background_img " #scroll_one>
                     <span class="blur-bg in-img tOp">a</span>

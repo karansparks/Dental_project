@@ -41,17 +41,17 @@
 
 
 <ng-container *ngIf="!viewThankYou" >
-    <div class="back_img bg-padd">
+    <div class="back_img bg-padd" id="appointment-section" #animateItem>
         <div class="container-fluid">
             <div class="row align-items-center position-relative ">
-                <div class="col-md-6 text-center ">
+                <div class="col-md-6 text-center " >
                  
                     <img src="./group.svg" alt="Dental Clinic" class="img-fluid" width="80%">
                 </div>
         
                 <!-- Form Section -->
-                <div class="col-md-5">
-                    <h1 class="log">MAKE AN <span class="cl-green">APPOINTMENT</span></h1>
+                <div class="col-md-5" #animateItem>
+                    <h1 class="log">MAKE AN <span class="cl-green" #animateItem>APPOINTMENT</span></h1>
                     <span class="blur-bg blur_bg top-0 start-0 "> a</span>
                     <p class="text-muted">
                         SCHEDULE YOUR DENTAL APPOINTMENT WITH EASE
@@ -60,7 +60,7 @@
                     </p>
         
                     <!-- Appointment Form -->
-                    <form  class="appointment-form p-4 rounded" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+                    <form  #animateItem  class="appointment-form p-4 rounded" [formGroup]="userForm" (ngSubmit)="onSubmit()">
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="name" class="form-label">Full Name</label>

@@ -1,6 +1,7 @@
-import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
-import { gsap } from 'gsap';
+import { Component, AfterViewInit, ElementRef, ViewChild, ViewChildren, QueryList } from '@angular/core';
+import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 @Component({
   selector: 'app-section-one',
@@ -8,62 +9,48 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
   templateUrl: './section-one.component.html',
   styleUrl: './section-one.component.scss',
   styles: [
-    `
-        :host {
-            @keyframes slidedown-icon {
-                0% {
-                    transform: translateY(0);
-                }
-
-                50% {
-                    transform: translateY(20px);
-                }
-
-                100% {
-                    transform: translateY(0);
-                }
-            }
-
-            .slidedown-icon {
-                animation: slidedown-icon;
-                animation-duration: 3s;
-                animation-iteration-count: infinite;
-            }
-
-            .box {
-                background-image: radial-gradient(var(--primary-300), var(--primary-600));
-                border-radius: 50% !important;
-                color: var(--primary-color-text);
-            }
-        }
-    `
 ]
 })
 export class SectionOneComponent implements AfterViewInit {
+  private timeline!: gsap.core.Timeline;
+    @ViewChild('animateSection', { static: true }) animateSection!: ElementRef;
+    @ViewChildren('animateItem') animateItems!: QueryList<ElementRef>;
   @ViewChild('note3d') box!: ElementRef;
   @ViewChild('tablet3d') tablet!: ElementRef;
 
   ngAfterViewInit() {
-    // gsap.to(this.box.nativeElement, { x: 200, duration: 2 });
-    // let tl = gsap.timeline();
-    // tl.to(this.box.nativeElement, { x: 200, duration: 1 })
-    // .to(this.box.nativeElement, { y: 100, duration: 1 })
-    //   .to(this.box.nativeElement, { rotation: 360, duration: 1 });
+    gsap.from(this.animateSection.nativeElement, {
+      scrollTrigger: {
+        trigger: this.animateSection.nativeElement,
+        start: 'top 80%', // when the top of the section hits 80% of viewport
+        toggleActions: 'play none none none', // play animation on scroll
+      },
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      ease: 'power2.out'
+    });
 
-      gsap.to(this.box.nativeElement, {
-        y: 15,
-        ease: "power1.out",
+    this.animateItems.forEach((item) => {
+      gsap.from(item.nativeElement, {
+        scrollTrigger: {
+          trigger: item.nativeElement,
+          start: 'top 80%',
+        },
+        y: 50,
+        opacity: 0,
         duration: 1,
-        yoyo: true,
-        repeat:-1,
+        stagger: 0.2
       });
+    });
 
-      gsap.to(this.tablet.nativeElement, {
-        y: 15,
-        ease: "power1.out",
-        duration: 1,
-        yoyo: true,
-        repeat:-1,
-      });
+    ScrollTrigger.refresh();
   }
+
+  ngOnDestroy(): void {
+    ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    if (this.timeline) {
+      this.timeline.kill();
+    }
+}
 }

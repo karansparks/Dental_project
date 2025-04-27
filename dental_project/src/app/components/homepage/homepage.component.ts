@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, ViewChild, OnInit } from '@angular/core';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -8,24 +8,14 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.scss'
 })
-export class HomepageComponent implements AfterViewInit{
+export class HomepageComponent implements AfterViewInit,OnInit{
   @ViewChild('box') box!: ElementRef;
-  ngAfterViewInit() {
-    // gsap.to(this.box.nativeElement, { x: 200, duration: 2 });
-    // let tl = gsap.timeline();
-    // tl.to(this.box.nativeElement, { x: 200, duration: 1 })
-    // .to(this.box.nativeElement, { y: 100, duration: 1 })
-    //   .to(this.box.nativeElement, { rotation: 360, duration: 1 });
+  currentItem = 'Book';
 
-      gsap.to(this.box.nativeElement, {
-        x: 200,
-        duration: 2,
-        scrollTrigger: {
-          trigger: this.box.nativeElement,
-          start: 'top center',
-          end: 'bottom center',
-          scrub: true,
-        },
-      });
+  ngOnInit(): void {
+    // window.location.reload();
+  }
+  ngAfterViewInit() {
+    
   }
 }
